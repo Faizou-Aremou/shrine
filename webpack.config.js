@@ -13,6 +13,7 @@ function getStyleUse(bundleFilename) {
       options: {
         includePaths: ['./node_modules'],
         implementation: require('dart-sass'),
+        webpackImporter: false,
         fiber: require('fibers'),
   }
     },
