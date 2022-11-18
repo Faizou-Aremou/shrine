@@ -3,7 +3,6 @@
 @import "@material/button/mdc-button";
 @import "@material/ripple/mdc-ripple";
 
-
 .header {
   text-align: center;
 }
@@ -24,6 +23,12 @@
   display: flex;
   margin: 20px auto;
   width: 300px;
+  &:not(.mdc-text-field--invalid) {
+    @include mdc-text-field-label-color(on-primary);
+  }
+  &.mdc-text-field--focused:not(.mdc-text-field--invalid) {
+    @include mdc-text-field-label-color(on-primary);
+  }
 }
 .button-container {
   display: flex;
@@ -34,4 +39,8 @@
 
 .button-container button {
   margin: 3px;
+}
+
+.cancel {
+  @include mdc-button-ink-color(on-primary);
 }
