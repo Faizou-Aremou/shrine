@@ -23,12 +23,12 @@
   display: flex;
   margin: 20px auto;
   width: 300px;
-  &:not(.mdc-text-field--invalid) {
-    @include mdc-text-field-label-color(on-primary);
-  }
-  &.mdc-text-field--focused:not(.mdc-text-field--invalid) {
-    @include mdc-text-field-label-color(on-primary);
-  }
+  // &:not(.mdc-text-field--invalid) {
+  //   @include mdc-text-field-label-color(on-primary);
+  // }
+  // &.mdc-text-field--focused:not(.mdc-text-field--invalid) {
+  //   @include mdc-text-field-label-color(on-primary);
+  // }
 }
 .button-container {
   display: flex;
@@ -42,5 +42,5 @@
 }
 
 .cancel {
-  @include mdc-button-ink-color(on-primary);
+  // @include mdc-button-ink-color(on-primary);
 }
